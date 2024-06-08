@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Textarea component</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com" async ></script>
+
+    <link
+      rel="icon"
+      href="img/favicon.ico"
+      sizes="any"
+    />
+  </head>
+  <body>
+    <form
+      class="flex flex-col gap-14 justify-center min-h-[100vh] w-[90%] md:w-[50%] lg:w-[40%] m-[auto]"
+    >
+      <div class="wrapper1">
+        <label
+          for="description1"
+          class="mb-6 text-sm font-medium"
+        >
+          Description</label
+        >
+        <textarea
+          id="description1"
+          class="block border-slate-300 border-2 rounded-lg text-sm p-2 w-full min-h-28 bg-slate-100 placeholder:text-slate-500 resize-none"
+          rows="3"
+          placeholder="Write your message..."
+        ></textarea>
+        <span class="remaining1 text-slate-500 text-sm ml-[calc(100%-3rem)]"
+          >0/500</span
+        >
+      </div>
+
+      <div class="wrapper2">
+        <label
+          for="description2"
+          class="mb-6 text-sm font-medium"
+        >
+          Description</label
+        >
+        <textarea
+          id="description2"
+          class="block border-red-300 border-2 rounded-lg text-sm p-2 w-full min-h-28 bg-slate-100 placeholder:text-slate-500 resize-none"
+          rows="3"
+          placeholder="Write your message..."
+        ></textarea>
+        <span class="err text-sm text-red-600">This field is required</span>
+      </div>
+
+      <div class="wrapper3">
+        <label
+          for="description3"
+          class="mb-6 text-sm font-medium"
+        >
+          Description</label
+        >
+        <textarea
+          id="description3"
+          class="block border-slate-300 border-2 rounded-lg text-sm p-2 w-full min-h-28 bg-slate-100 placeholder:text-slate-500 resize-none"
+          rows="3"
+          placeholder="Write your message..."
+        ></textarea>
+        <span class="remaining3 text-slate-500 text-sm ml-[calc(100%-3rem)]"
+          >0/500</span
+        >
+      </div>
+    </form>
+    <script src="js/index.js"></script>
+  </body>
+</html>
